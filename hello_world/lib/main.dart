@@ -2,9 +2,9 @@ void main() {
 //if statement
   int age = 20;
   if(age>=18){
-    print('allowed');
+    print('allowed to drive');
   }
   else{
-    print('notallowed');
+    print('notallowed to drive');
   }
 }
