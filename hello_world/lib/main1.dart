@@ -12,4 +12,20 @@ void main() {
      } 
     else{ print('invalid destination zone');
 }
+  
+  
+  
+  switch(destinationZone)
+  {
+    case 'PQR':
+   print('shipping cost: ${weightinkg*10}');
+    
+    case 'XYZ':
+   print('shipping cost: ${weightinkg*5}');
+    case 'ABC':
+   print('shipping cost: ${weightinkg*7}');
+
+  }
+
+
 }
