@@ -1,15 +1,24 @@
+import 'package:flutter/material.dart';
+
+bool isAllowed = false;
 void main() {
-   String destinationZone = 'PQR';
-     double weightinkg = 6;
-     if(destinationZone =='PQR'){
-       print('shipping cost: ${weightinkg*10}');
-     }
-     else if(destinationZone =='XYZ'){
-       print('shipping cost: ${weightinkg*5}');
-     }
-     else if(destinationZone =='ABC'){
-       print('shipping cost: ${weightinkg*7}');
-     } 
-    else{ print('invalid destination zone');
-}
+//if statement
+  int age = 20;
+  if (age != 18 && isAllowed) {
+    print('allowed to drive');
+  } else {
+    print('notallowed to drive');
+    String Value = 'hi';
+    if (Value.startsWith('H')) {
+      print('wow')
+    }
+    else{
+      print('noooooo');
+    }
+    
+
+
+
+
+  }
 }
