@@ -18,6 +18,7 @@ void main() {
     case 'XYZ':
       break;
       print('shipping cost: ${weightinkg * 5}');
+
     case 'ABC':
       break;
       print('shipping cost: ${weightinkg * 7}');
