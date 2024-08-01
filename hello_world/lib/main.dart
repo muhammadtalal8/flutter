@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 bool isAllowed = false;
 void main() {
@@ -10,15 +9,9 @@ void main() {
     print('notallowed to drive');
     String Value = 'hi';
     if (Value.startsWith('H')) {
-      print('wow')
-    }
-    else{
+      print('wow');
+    } else {
       print('noooooo');
     }
-    
-
-
-
-
   }
 }
