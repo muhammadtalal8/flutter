@@ -11,7 +11,7 @@ void main(){
 var ascList = [1,2,3,4,5,6];
  print(ascList.reversed.toList());
  //list 5
- var mylist = [1, 2, 3, 4, 5];
+ var mylist   = [1, 2, 3, 4, 5];
  print(myList.getRange(2,5));
  //list 6
 var List2= [0,1,2,3,4,5,6];
