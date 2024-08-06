@@ -1,12 +1,17 @@
 void main() async {
-  countDown().listen((val) {
-    print(val);
-  });
+  countDown().listen(
+    (val) {
+      print(val);
+    },
+    onDone: () {
+      print('i completed it');
+    },
+  );
 }
 
-Stream<int> countDown() async* {
-  for (int i = 5; i > 0; i--) {
-    yield i;
-    await Future.delayed(Duration(seconds: 1));
-  }
+Stream<int> countDown()  {
+
+  return Stream.periodic(Duration(seconds: 1), (val){
+  return val;
+  });
 }
