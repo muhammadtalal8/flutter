@@ -1,14 +1,15 @@
 void main() async {
-  final result = await giveAResultAfter2Sec();
-  print(result);
-  giveAResultAfter2Sec();
+  print('hello');
+  giveAResultAfter2Sec().then((val) {
+    print(val);
+  });
   print('Hey');
   print('Hello');
   print('Greeting!');
 }
 
 Future<String> giveAResultAfter2Sec() {
-  return Future(() {
-    return 'Hey!!!!';
+  return Future.delayed(Duration(seconds: 2), () {
+    return 'hey!!!!!';
   });
 }
