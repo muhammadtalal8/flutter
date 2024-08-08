@@ -2,9 +2,9 @@ void main() {
   String destinationZone = 'PQR';
   double weightinkg = 6;
   if (destinationZone == 'PQR') {
-    print('shipping cost: ${weightinkg * 10}');
+    print('shipping cost: ${weightinkg * 9}');
   } else if (destinationZone == 'XYZ') {
-    print('shipping cost: ${weightinkg * 5}');
+    print('shipping cost: ${weightinkg * 8}');
   } else if (destinationZone == 'ABC') {
     print('shipping cost: ${weightinkg * 7}');
   } else {
@@ -13,11 +13,11 @@ void main() {
 
   switch (destinationZone) {
     case 'PQR':
-      print('shipping cost: ${weightinkg * 10}');
+      print('shipping cost: ${weightinkg * 9}');
       break;
     case 'XYZ':
       break;
-      print('shipping cost: ${weightinkg * 5}');
+      print('shipping cost: ${weightinkg * 8}');
 
     case 'ABC':
       break;
