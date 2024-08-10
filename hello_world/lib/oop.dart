@@ -12,12 +12,12 @@ void main() {
 }
 
 class Vehicle {
-  int speed = 10;
+  int speed = 20;
   bool engineworking = false;
   bool lighton = true;
-  int wheels = 10;
+  int wheels = 8;
   void accelerate() {
-    speed += 10;
+    speed += 20;
   }
 }
 
