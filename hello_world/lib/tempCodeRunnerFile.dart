@@ -1,1 +1,1 @@
-stdin
+int rows=0;
