@@ -1,7 +1,39 @@
+import 'dart:io';
+
 void main() {
- 
- 
- 
+ int? n = int.parse(stdin.readLineSync()!);
+
+  int factorial = 1;
+  int i = n;
+  while (i > 1) {
+    factorial *= i;
+    i--;
+  }
+  print('The factorial of $n is $factorial');
+
+
+  
+
+  String input = "Hello, how are you?";
+  
+  int vowelCount = 0;
+  
+  for (int i = 0; i < input.length; i++) {
+    String letter = input[i];
+    
+    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' ||
+        letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
+      vowelCount++;
+    }
+  }
+  
+  print("Number of vowels: $vowelCount");
+
+
+
+
+
+
  
  
  
