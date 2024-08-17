@@ -1,6 +1,102 @@
 void main() {
 
+String name = 'Alice';
+  int rollNumber = 202;
+  int math = 85;
+  int science = 90;
+  int english = 80;
 
+  int totalMarks = math + science + english;
+  double percentage = totalMarks / 3.0;
+
+  print('Name: $name');
+  print('Roll Number: $rollNumber');
+  print('Math: $math');
+  print('Science: $science');
+  print('English: $english');
+  print('Total Marks: $totalMarks');
+  print('Percentage: ${percentage.toStringAsFixed(2)}%');
+
+
+
+
+ int number5 = 2;
+
+  do {
+    print(number5);
+    number5 += 2;
+  } while (number5 <= 20);
+
+
+
+
+  int number = 94738;
+  int largestDigit = 0;
+
+  do {
+    int digit = number % 10; // Get the last digit
+    if (digit > largestDigit) {
+      largestDigit = digit; // Update largest digit if current digit is larger
+    }
+    number ~/= 10; // Remove the last digit
+  } while (number > 0);
+
+  print('Largest digit: $largestDigit');
+
+
+ List<double> numbers = [5.0, 10.0, 15.0, 20.0, 25.0];
+  int index = 0;
+  double sum = 0.0;
+
+  do {
+    sum += numbers[index];
+    index++;
+  } while (index < numbers.length);
+
+  double average = sum / numbers.length;
+
+  print('Average: $average');
+
+
+
+int number3 = 1;
+
+  do {
+    print(number3 * number3);
+    number3++;
+  } while (number3 <= 5);
+double number2 = 10.0;
+
+  while (number2 > 0) {
+    print(number2);
+    number2--;
+  }
+
+
+
+Map<String, int> shoppingCart = {
+    'Banana': 5,
+    'Orange': 3,
+    'Apple': 4,
+    'Mango': 2,
+  };
+
+  if (shoppingCart.containsKey('Apple')) {
+    print('Product found');
+  } else {
+    print('Product not found');
+  }
+ Map<String, dynamic> user = {
+    'name': 'Alice',
+    'isAdmin': true,
+    'isActive': true,
+  };
+
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('Active admin');
+  } else {
+    print('Not an active admin');
+  }
   List<int> originalList = [5, -3, 8, -1, 2, -7, 4, 6];
 
   List<int> positiveList = originalList.where((num) => num >= 0).toList();
@@ -67,8 +163,8 @@ Map<String, dynamic> car = {
   print('Original List: $originalList3');
   print('Sorted List: $sortedList');
 
-  List name = ['Talal', 'Bilal', 'Nabeel'];
-  print(name);
+  List name6 = ['Talal', 'Bilal', 'Nabeel'];
+  print(name6);
   List<String> days = [];
 
   days.add('Monday');
@@ -93,11 +189,11 @@ Map<String, dynamic> car = {
     day.removeLast();
     print(day);
   }
-  List<int> numbers = [79, 56, 9, 89, 76, 45, 1, 43, 213];
-  int smallest = numbers[0];
-  int largest = numbers[0];
+  List<int> numbers1 = [79, 56, 9, 89, 76, 45, 1, 43, 213];
+  int smallest = numbers1[0];
+  int largest = numbers1[0];
 
-  for (int number in numbers) {
+  for (int number in numbers1) {
     if (number < smallest) {
       smallest = number;
     }
@@ -120,6 +216,9 @@ Map<String, dynamic> car = {
   print('Keys with length 4: $keys');
 
   
+
+
+
 
   var world = {
     'Pakistan': {
@@ -174,8 +273,8 @@ Map<String, dynamic> car = {
   for (var user in usersEligibility) {
     print(user);
   }
-  List<int> number = [55, 89, 26, 899, 45, 34, 32];
-  int maxValue = number.reduce((a, b) => a > b ? a : b);
+  List<int> number1 = [55, 89, 26, 899, 45, 34, 32];
+  int maxValue = number1.reduce((a, b) => a > b ? a : b);
   print('Maximum value: $maxValue');
   List originalList1 = ['apple', 'apple', 'apple', 'banana', 'banana', 'grape'];
   List uniqueList = [];
