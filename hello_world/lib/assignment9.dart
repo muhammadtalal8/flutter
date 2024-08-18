@@ -1,39 +1,27 @@
 import 'dart:io';
-void listMethodsExample() {
-  // Create a list
+void main() {
   List<int> numbers = [1, 2, 3, 4, 5];
 
-  // Add a new item to the end of the list
-  numbers.add(6); // [1, 2, 3, 4, 5, 6]
+  numbers.add(6); 
 
-  // Insert an item at a specific index
-  numbers.insert(2, 10); // [1, 2, 10, 3, 4, 5, 6]
+  numbers.insert(2, 10); 
 
-  // Remove the first occurrence of an item
-  numbers.remove(10); // [1, 2, 3, 4, 5, 6]
+  numbers.remove(10); 
 
-  // Remove an item at a specific index
-  numbers.removeAt(1); // [1, 3, 4, 5, 6]
+  numbers.removeAt(1); 
 
-  // Check if the list contains a specific item
   bool containsFive = numbers.contains(5); // true
 
-  // Get the length of the list
   int length = numbers.length; // 5
 
-  // Get a sublist from the list
   List<int> subList = numbers.sublist(1, 4); // [3, 4, 5]
 
-  // Clear all items from the list
-  numbers.clear(); // []
+  numbers.clear();
 
-  // Create a map
   Map<String, int> ages = {'Alice': 30, 'Bob': 25};
 
-  // Add a new key-value pair
   ages['Charlie'] = 35; // {'Alice': 30, 'Bob': 25, 'Charlie': 35}
 
-  // Remove a key-value pair by key
   ages.remove('Alice'); // {'Bob': 25, 'Charlie': 35}
 
   // Check if the map contains a specific key
