@@ -1,32 +1,44 @@
-class Student {
-  String name;
-  int rollNumber;
-  String course;
+import 'class.dart';
+import 'encapsulation.dart';
+import 'inheritance.dart';
+import 'polymorphism.dart';
 
-  Student({required this.name, required this .rollNumber, required this.course});
-}
+// Abstraction
+// Polymorphism
+// Encapsulation
+// Inheritance
+main() {
+   var xyz = "sd";
+  var abc = "ffd";
+  if (true) {
 
-class StudentManagementSystem {
-  List<Student> students = [];
-
-  void addStudent(Student student) {
-    students.add(student);
+    print(abc);
+    print(xyz);
   }
+  print(xyz);
 
-  void removeStudent(int rollNumber) {
-    students.removeWhere((student) => student.rollNumber == rollNumber);
-  }
-
-  void updateStudent(Student student) {
-    int index = students.indexWhere((element) => element.rollNumber == student.rollNumber);
-    if (index != -1) {
-      students[index] = student;
-    }
-  }
-
-  void displayStudents() {
-    for (var student in students) {
-      print("Name: ${student.name}, Roll Number: ${student.rollNumber}, Course: ${student.course}");
-    }
-  }
+  Person person1 = Person(); //object  instance
+  person1.getName("Shahzeb naqvi");
+  Person person2 = Person(); //object  instance
+  person2.getMyName();
+  person1.getMyName();
+  Animal animalObj = Animal(name: "Cat");
+  animalObj.getMyName();
+  inheritance Code
+  Car car1 = Car(color: "Red");
+  car1.isRunning();
+  Bike bike = Bike(color: "Green", noPlate: "32332");
+  bike.isRunning();
+  // bike1.update("blue");
+  bike.color = "green";
+  print(bike.color);
+  polymorphism = > overriding , overloading
+  Bike bike = Bike();
+  bike.isRunning("bike");
+  encapsulation
+  Human human1 = Human();
+  print(human1.name);
+  // print(human1.accessToken);
+  human1.getname();
+  Dog dog1 = Dog();
 }
