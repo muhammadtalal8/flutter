@@ -1,44 +1,28 @@
-import 'class.dart';
-import 'encapsulation.dart';
-import 'inheritance.dart';
-import 'polymorphism.dart';
+// Define a class for Students
+class Student {
+  String id;
+  String name;
+  String email;
+  Map<String, double> grades = {}; // courseID -> grade
 
-// Abstraction
-// Polymorphism
-// Encapsulation
-// Inheritance
-main() {
-   var xyz = "sd";
-  var abc = "ffd";
-  if (true) {
+  Student({required this.id, required this.name, required this.email});
+}
 
-    print(abc);
-    print(xyz);
-  }
-  print(xyz);
+// Define a class for Courses
+class Course {
+  String id;
+  String name;
+  int credits;
+  List<String> enrolledStudents = []; // List of Student IDs
 
-  Person person1 = Person(); //object  instance
-  person1.getName("Shahzeb naqvi");
-  Person person2 = Person(); //object  instance
-  person2.getMyName();
-  person1.getMyName();
-  Animal animalObj = Animal(name: "Cat");
-  animalObj.getMyName();
-  inheritance Code
-  Car car1 = Car(color: "Red");
-  car1.isRunning();
-  Bike bike = Bike(color: "Green", noPlate: "32332");
-  bike.isRunning();
-  // bike1.update("blue");
-  bike.color = "green";
-  print(bike.color);
-  polymorphism = > overriding , overloading
-  Bike bike = Bike();
-  bike.isRunning("bike");
-  encapsulation
-  Human human1 = Human();
-  print(human1.name);
-  // print(human1.accessToken);
-  human1.getname();
-  Dog dog1 = Dog();
+  Course({required this.id, required this.name, required this.credits});
+}
+
+// Define a class for Instructors
+class Instructor {
+  String id;
+  String name;
+  List<String> courses = []; // List of Course IDs
+
+  Instructor({required this.id, required this.name});
 }
