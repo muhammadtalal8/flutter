@@ -1,12 +1,12 @@
-class Vehicle1 {
+class Vehicle {
   isRunning(String ab) {
     print("Vehicle is running");
   }
 }
 
-class Car1 extends Vehicle1 {
+class Bike extends Vehicle {
   @override
   isRunning(String ab) {
-    print("Car is running");
+    print("Bike is running");
   }
 }
