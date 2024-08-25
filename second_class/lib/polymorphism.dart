@@ -1,19 +1,30 @@
-class Vehicle1 {
-  isRunning(String ab) {
-    print("Vehicle is running");
+// Base class
+class Vehical {
+  void sound() {
+    print("Vehical makes a sound");
   }
 }
 
-class Car1 extends Vehicle1 {
+// Derived class 1
+class Car extends Vehical {
   @override
-  isRunning(String ab) {
-    print("Car is running");
+  void sound() {
+    print("ratatata");
   }
 }
 
-class Bike1 extends Vehicle1 {
+// Derived class 2
+class Bike extends Vehical {
   @override
-  isRunning(String ab) {
-    print("Bike is running");
+  void sound() {
+    print("bohohom");
   }
+}
+
+void main() {
+  Vehical myCar = Car();  // Animal reference but Dog object
+  Vehical myBike = Bike();  // Animal reference but Cat object
+
+  myCar.sound();  // Output: Dog barks
+  myBike.sound();  // Output: Cat meows
 }
