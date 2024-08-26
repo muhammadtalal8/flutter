@@ -5,7 +5,6 @@ class Vehical {
   }
 }
 
-// Derived class 1
 class Car extends Vehical {
   @override
   void sound() {
@@ -13,7 +12,6 @@ class Car extends Vehical {
   }
 }
 
-// Derived class 2
 class Bike extends Vehical {
   @override
   void sound() {
@@ -22,9 +20,9 @@ class Bike extends Vehical {
 }
 
 void main() {
-  Vehical myCar = Car();  // Animal reference but Dog object
-  Vehical myBike = Bike();  // Animal reference but Cat object
+  Vehical myCar = Car();
+  Vehical myBike = Bike();
 
-  myCar.sound();  // Output: Dog barks
-  myBike.sound();  // Output: Cat meows
+  myCar.sound();
+  myBike.sound();
 }
