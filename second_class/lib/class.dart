@@ -1,5 +1,5 @@
 class Person {
-  String name = "Shahzeb";
+  String name = "Talal";
   getName(String stdName) {
     name = stdName;
     print(name);
@@ -11,7 +11,7 @@ class Person {
 }
 
 class Animal {
-  String name = "xyz";
+  String name = "abc";
   Animal({required String this.name});
 
   getMyName() {
@@ -19,5 +19,4 @@ class Animal {
   }
 }
 
-void main() {
-}
+
