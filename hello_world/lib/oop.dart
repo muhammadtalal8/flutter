@@ -1,5 +1,5 @@
 void main() {
-  Vehicle car = Car();
+  /*Vehicle car = Car();
   print(car.engineworking);
   print(car.lighton);
   print(car.speed);
@@ -33,4 +33,5 @@ class Truck extends Vehicle {
   void printsomething() {
     print(wheels);
   }
+}*/
 }

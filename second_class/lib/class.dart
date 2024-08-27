@@ -18,5 +18,9 @@ class Animal {
     print(name);
   }
 }
+void main(List<String> args) {
+     var abc = "ffd";
+     print(abc);
 
+}
 
