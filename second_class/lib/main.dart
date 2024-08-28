@@ -7,23 +7,23 @@ void main() {
       Expanded(child: Text(
         'One',
         textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 50),
+        style: TextStyle(fontSize: 40),
       )),
             Text(
         'Two',
         textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 50),
+        style: TextStyle(fontSize: 40),
       ),
             Text(
         'Three',
         textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 50),
+        style: TextStyle(fontSize: 40),
       ),
       
             Text(
         'Four',
         textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 50),
+        style: TextStyle(fontSize: 40),
       ),
       
     ],
