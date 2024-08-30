@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(Container(
-    // padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 100.0),
-padding: EdgeInsets.all(10.0),
+    padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 100.0),
+// padding: EdgeInsets.all(10.0),
+decoration: BoxDecoration(color: Colors.blue),
+
     child: Column(
       children: [
         Text("1",
