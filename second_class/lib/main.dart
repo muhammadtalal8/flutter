@@ -63,6 +63,156 @@ void main() {
               style: TextStyle(fontSize: 100),
             ),
           )),
+           Container(
+            height: 100,
+            color: Colors.deepPurple,
+              child: Center(
+            child: Text(
+              "6",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+                  Container(
+            height: 100,
+            color: Colors.deepOrange,
+              child: Center(
+            child: Text(
+              "7",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+          Container(
+            height: 100,
+            color: Colors.amberAccent,
+              child: Center(
+            child: Text(
+              "8",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+           Container(
+            height: 100,
+            color: Colors.deepPurple,
+              child: Center(
+            child: Text(
+              "9",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+                  Container(
+            height: 100,
+            color: Colors.deepOrange,
+              child: Center(
+            child: Text(
+              "10",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+          Container(
+            height: 100,
+            color: Colors.amberAccent,
+              child: Center(
+            child: Text(
+              "11",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+           Container(
+            height: 100,
+            color: Colors.deepPurple,
+              child: Center(
+            child: Text(
+              "12",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+                  Container(
+            height: 100,
+            color: Colors.deepOrange,
+              child: Center(
+            child: Text(
+              "13",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+          Container(
+            height: 100,
+            color: Colors.amberAccent,
+              child: Center(
+            child: Text(
+              "14",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+           Container(
+            height: 100,
+            color: Colors.deepPurple,
+              child: Center(
+            child: Text(
+              "15",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+                  Container(
+            height: 100,
+            color: Colors.deepOrange,
+              child: Center(
+            child: Text(
+              "16",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+          Container(
+            height: 100,
+            color: Colors.amberAccent,
+              child: Center(
+            child: Text(
+              "17",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+           Container(
+            height: 100,
+            color: Colors.deepPurple,
+              child: Center(
+            child: Text(
+              "18",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+                  Container(
+            height: 100,
+            color: Colors.deepOrange,
+              child: Center(
+            child: Text(
+              "19",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
+          Container(
+            height: 100,
+            color: Colors.amberAccent,
+              child: Center(
+            child: Text(
+              "20",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100),
+            ),
+          )),
         ],
       )));
 }
