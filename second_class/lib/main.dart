@@ -6,16 +6,22 @@ void main() {
     MaterialApp(
     
      title: 'FLUTTER', 
-     home: Container(
-      decoration: BoxDecoration(color: Color.fromARGB(255, 0, 102, 255)),
+     home: Scaffold(
+      appBar: AppBar(
+        title: Text('My Flutter APP', style: TextStyle(color: Colors.black, backgroundColor: Colors.cyanAccent),),
+      backgroundColor: Colors.blueGrey,
+    
+      ),
       
-      child: Center(   
-        child: Text(
-          'Material APP',
-          textDirection: TextDirection.ltr,
-        style: TextStyle(
-          color: const Color.fromARGB(255, 221, 0, 0), decoration: TextDecoration.none)),
 
+      backgroundColor: Colors.cyan,
+      body: Center(
+        child: Text('Material APP',
+        textDirection: TextDirection.ltr,
+        style: TextStyle(
+          color: Colors.black,decoration: TextDecoration.none,
+          fontSize: 50 
+        )),
       ),
      ),
 ));
