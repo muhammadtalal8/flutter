@@ -17,7 +17,7 @@ void main() {
       backgroundColor: Colors.cyan,
       // body: Image(image: AssetImage('images/download (1).jpeg'
       // ), fit: BoxFit.cover,)),
-      body: GridView.extent(maxCrossAxisExtent: 300,
+      body: GridView.count(crossAxisCount: 4,
       mainAxisSpacing: 500,
       crossAxisSpacing: 100,
       children: [
