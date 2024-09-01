@@ -7,8 +7,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: 350,
-        width: 350,
+        height: 450,
+        width: 450,
         child: Card(
           child: Padding(
             padding: const EdgeInsets.all(30),
@@ -23,7 +23,19 @@ class MyHomePage extends StatelessWidget {
                 const Text(
                   'VLEKTRA',
                   style: TextStyle(fontSize: 30),
-                )
+                ),
+                TextButton(
+                    onPressed: () {
+                      print('button click');
+                    },
+                    child:  const Text('BLACK FOX'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.greenAccent,
+                      backgroundColor: Colors.lightGreen,
+                      padding: const EdgeInsets.all(30.0),
+                      textStyle: const TextStyle(fontSize: 30),
+                      
+                    ),)
               ],
             ),
           ),
