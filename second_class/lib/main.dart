@@ -15,21 +15,15 @@ void main() {
       
 
       backgroundColor: Colors.cyan,
-      // body: Image(image: AssetImage('images/download (1).jpeg'
-      // ), fit: BoxFit.cover,)),
-      body: GridView.count(crossAxisCount: 4,
-      mainAxisSpacing: 500,
-      crossAxisSpacing: 100,
-      children: [
-        Image(image: AssetImage('images/download (1).jpeg',)),
-        Image(image: AssetImage('images/download.jpeg')),
-        Image(image: AssetImage('images/download (1).jpeg',)),
-        Image(image: AssetImage('images/download.jpeg')),
       
-        Image(image: AssetImage('images/download (1).jpeg',)),
-        Image(image: AssetImage('images/download.jpeg')),
-        Image(image: AssetImage('images/download (1).jpeg',)),
-        Image(image: AssetImage('images/download.jpeg')),
-      ],))
-));
+      body: Stack(
+        children: [
+          Image(image: AssetImage('images/download.jpeg')),
+         Text('This is Image',
+         style: TextStyle(
+          fontSize: 50,color: Colors.redAccent
+          ,fontWeight: FontWeight.bold),)
+        ],
+      )
+    )));
 }
