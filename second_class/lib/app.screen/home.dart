@@ -24,18 +24,9 @@ class MyHomePage extends StatelessWidget {
                   'VLEKTRA',
                   style: TextStyle(fontSize: 30),
                 ),
-                TextButton(
-                    onPressed: () {
-                      print('button click');
-                    },
-                    child:  const Text('BLACK FOX'),
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.greenAccent,
-                      backgroundColor: Colors.lightGreen,
-                      padding: const EdgeInsets.all(30.0),
-                      textStyle: const TextStyle(fontSize: 30),
-                      
-                    ),)
+                ElevatedButton(onPressed: (){
+                  print('BUTTON CLICK');
+                }, child: const Text('CLICK ME'))
               ],
             ),
           ),
