@@ -24,15 +24,22 @@ class MyHomePage extends StatelessWidget {
                   'VLEKTRA',
                   style: TextStyle(fontSize: 30),
                 ),
-                ElevatedButton(onPressed: (){
-                  print('BUTTON CLICK');
-                }, child: Text('CLICK ME'),
-                style: ElevatedButton.styleFrom(
+                // ElevatedButton(onPressed: (){
+                //   print('BUTTON CLICK');
+                // }, child: Text('CLICK ME'),
+                // style: ElevatedButton.styleFrom(
 
-                 backgroundColor: Colors.purpleAccent ,
-                 padding: const EdgeInsets.all(10.0),
-                 textStyle: const TextStyle(fontSize: 40)
-                ))
+                //  backgroundColor: Colors.purpleAccent ,
+                //  padding: const EdgeInsets.all(10.0),
+                //  textStyle: const TextStyle(fontSize: 40)
+                // ))
+                FloatingActionButton(onPressed: () {
+                  print('Button clicked');
+
+                },
+                child: Text('click'),
+                backgroundColor: Colors.teal,
+                )
               ],
             ),
           ),
