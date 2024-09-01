@@ -26,7 +26,13 @@ class MyHomePage extends StatelessWidget {
                 ),
                 ElevatedButton(onPressed: (){
                   print('BUTTON CLICK');
-                }, child: const Text('CLICK ME'))
+                }, child: Text('CLICK ME'),
+                style: ElevatedButton.styleFrom(
+
+                 backgroundColor: Colors.purpleAccent ,
+                 padding: const EdgeInsets.all(10.0),
+                 textStyle: const TextStyle(fontSize: 40)
+                ))
               ],
             ),
           ),
