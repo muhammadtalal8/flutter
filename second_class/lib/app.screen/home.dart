@@ -34,10 +34,10 @@ class MyHomePage extends StatelessWidget {
                 //  textStyle: const TextStyle(fontSize: 40)
                 // ))
                 FloatingActionButton(onPressed: () {
-                  print('Button clicked');
+                  print('Button is clicked');
 
                 },
-                child: Text('click'),
+                child: Text('click the button'),
                 backgroundColor: Colors.teal,
                 )
               ],
