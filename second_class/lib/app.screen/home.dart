@@ -16,11 +16,14 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Column(
         children: [
           TextField(
-            onSubmitted: (value) {
+            // onSubmitted: (value) {
+            //   setState(() {
+            //     name = value;
+            //   });
+onChanged: (value) {
               setState(() {
                 name = value;
-              });
-            
+              });            
             },
           ),
           Text(
