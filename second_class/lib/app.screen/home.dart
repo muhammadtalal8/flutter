@@ -1,20 +1,35 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
-  
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return  Center(
-        child: Text(
-      addNumber(10, 40),
-     
-      textDirection: TextDirection.ltr,
-      style: const TextStyle(fontSize: 30),
-    ));
-  }
+  // ignore: library_private_types_in_public_api
+  _MyHomePageState createState() => _MyHomePageState();
+}
 
-  String addNumber(a, b) {
-    return 'Number is ${addNumber(10, 80)}';
+class _MyHomePageState extends State<MyHomePage> {
+  String name = "";
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        children: [
+          TextField(
+            onSubmitted: (value) {
+              setState(() {
+                name = value;
+              });
+            
+            },
+          ),
+          Text(
+            name,
+            textDirection: TextDirection.ltr,
+            style: const TextStyle(fontSize: 40),
+          )
+        ],
+      ),
+    );
   }
 }

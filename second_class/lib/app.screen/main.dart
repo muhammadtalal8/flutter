@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget{
       appBar: AppBar(
         title: const Text('My Flutter APP', 
         style: TextStyle(color: Colors.black, backgroundColor: Colors.cyanAccent),),
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.blueAccent,
       ),
       backgroundColor: Colors.cyan,
-      body: MyHomePage()));
+      body: const MyHomePage()));
   }
 }
