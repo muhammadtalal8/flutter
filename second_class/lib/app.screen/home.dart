@@ -7,14 +7,14 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Center(
         child: Text(
-      'Number is ${addNumber(10, 80)}',
+      addNumber(10, 40),
      
       textDirection: TextDirection.ltr,
       style: const TextStyle(fontSize: 30),
     ));
   }
 
-  int addNumber(a, b) {
-    return a + b;
+  String addNumber(a, b) {
+    return 'Number is ${addNumber(10, 80)}';
   }
 }
