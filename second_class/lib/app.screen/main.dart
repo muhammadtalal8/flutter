@@ -22,6 +22,6 @@ class MyApp extends StatelessWidget{
       backgroundColor: Colors.blueGrey,
       ),
       backgroundColor: Colors.cyan,
-      body: const MyHomePage()));
+      body: MyHomePage()));
   }
 }
