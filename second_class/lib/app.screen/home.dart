@@ -9,30 +9,84 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String name = "";
+  // ignore: non_constant_identifier_names
+  final _form_key = GlobalKey<FormState>();
+  var name = "";
+  var email = "";
+  var password = "";
+
+  final nameController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          TextField(
-            // onSubmitted: (value) {
-            //   setState(() {
-            //     name = value;
-            //   });
-onChanged: (value) {
-              setState(() {
-                name = value;
-              });            
-            },
+    return Form(
+        key: _form_key,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 40),
+          child: ListView(
+            children: [
+              TextFormField(
+                decoration: const InputDecoration(
+                    labelText: 'name:',
+                    labelStyle: TextStyle(fontSize: 20),
+                    errorStyle: TextStyle(
+                        color: Color.fromARGB(255, 82, 82, 255), fontSize: 20)),
+                controller: nameController,
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'please enter name';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                    labelText: 'email:', labelStyle: TextStyle(fontSize: 20)),
+                controller: emailController,
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'please enter Email';
+                  } else if (!value.contains('@gmail.com')) {
+                    return 'PLEASE ENTER VALID EMAIL';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                obscureText: true,
+                decoration: const InputDecoration(
+                    labelText: 'password:',
+                    labelStyle: TextStyle(fontSize: 20)),
+                controller: passwordController,
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'please enter password';
+                  }
+                  return null;
+                },
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    if (_form_key.currentState!.validate()) {
+                      setState(() {
+                        name = nameController.text;
+                        email = emailController.text;
+                        password = passwordController.text;
+                        
+                      });
+                      print('clicked');
+                    }
+                  },
+                  child:
+                  
+                   const Text('submit')),
+              Text('Name: $name'),
+              Text('Email: $email'),
+              Text('Password: $password'),
+              
+            ],
           ),
-          Text(
-            name,
-            textDirection: TextDirection.ltr,
-            style: const TextStyle(fontSize: 40),
-          )
-        ],
-      ),
-    );
+        ));
   }
 }
