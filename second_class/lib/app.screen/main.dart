@@ -1,27 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:second_class/app.screen/home.dart';
 
-
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
-class MyApp extends StatelessWidget{
-  const MyApp({super.key});
 
+class MyApp extends StatelessWidget {
+  
 
- @override
+  // This widget is the root of your application.
+  @override
   Widget build(BuildContext context) {
-    return  
-    MaterialApp(
-    
-     title: 'FLUTTER', 
-     home: Scaffold(
-      appBar: AppBar(
-        title: const Text('My Flutter APP', 
-        style: TextStyle(color: Colors.black, backgroundColor: Colors.cyanAccent),),
-      backgroundColor: Colors.blueAccent,
+    return MaterialApp(
+      title: 'WHATSAPP',
+      theme: ThemeData(
+        primaryColor:  const Color.fromARGB(255, 6, 92, 9), 
+     
       ),
-      backgroundColor: Colors.cyan,
-      body: const MyHomePage()));
+      debugShowCheckedModeBanner: false,
+      home: const MyHomePage(title: 'Whatsapp'),
+    );
   }
 }
