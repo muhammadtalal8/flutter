@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'WHATSAPP',
       theme: ThemeData(
         primaryColor:  const Color.fromARGB(255, 6, 92, 9), 
+        
      
       ),
       debugShowCheckedModeBanner: false,
