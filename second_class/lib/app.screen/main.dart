@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:second_class/app.screen/home.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+
   
 
   // This widget is the root of your application.
