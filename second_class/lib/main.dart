@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(LudoBoardApp());
+  runApp(const LudoBoardApp());
 }
 
 class LudoBoardApp extends StatelessWidget {
+  const LudoBoardApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: LudoBoard(),
       debugShowCheckedModeBanner: false,
     );
@@ -15,14 +17,15 @@ class LudoBoardApp extends StatelessWidget {
 }
 
 class LudoBoard extends StatelessWidget {
-  // Number of rows/columns in the Ludo grid (15x15 for standard Ludo board)
   final int boardSize = 15;
+
+  const LudoBoard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ludo Board Design'),
+        title: const Text('Ludo Board Design'),
         backgroundColor: Colors.teal,
       ),
       body: Center(
@@ -31,7 +34,7 @@ class LudoBoard extends StatelessWidget {
           height: 300,
           color: Colors.black,
           child: GridView.builder(
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: boardSize,
             ),
@@ -49,7 +52,7 @@ class LudoBoard extends StatelessWidget {
 class LudoTile extends StatelessWidget {
   final int index;
 
-  LudoTile({required this.index});
+  const LudoTile({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +68,7 @@ class LudoTile extends StatelessWidget {
       color = Colors.blue[300]!;
     }
     return Container(
-      margin: EdgeInsets.all(1),
+      margin: const EdgeInsets.all(1),
       color: color,
     );
   }
