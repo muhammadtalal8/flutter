@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const LudoBoardApp());
+  runApp(const LudoBoardApp());                                                                        
 }
 
 class LudoBoardApp extends StatelessWidget {
