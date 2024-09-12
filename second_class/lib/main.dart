@@ -17,7 +17,7 @@ class LudoBoardApp extends StatelessWidget {
 }
 
 class LudoBoard extends StatelessWidget {
-  final int boardSize = 15;
+  final int boardSize = 10;
 
   const LudoBoard({super.key});
 
@@ -30,8 +30,8 @@ class LudoBoard extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 300,
-          height: 300,
+          width: 250,
+          height: 250,
           color: Colors.black,
           child: GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
