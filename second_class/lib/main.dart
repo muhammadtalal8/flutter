@@ -11,7 +11,7 @@ class LudoBoardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: LudoBoard(),
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
     );
   }
 }
