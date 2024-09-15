@@ -1,11 +1,13 @@
+
 import 'package:flutter/material.dart';
+import 'package:second_class/pages/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  
 
   
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
      
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Whatsapp'),
+      home:MyHomePage(title: 'Whatsapp'),
     );
   }
 }

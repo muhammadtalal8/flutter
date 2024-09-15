@@ -11,21 +11,15 @@ List<ChatModel> chatData = [
 name:"Talal",
 message: "Hello",
 time: "9:42",
-avatar: " ",
+avatar: "images/download(1).jpeg ",
+
   
   ),
   ChatModel(
 name:"Bilal",
 message: "Hi",
 time: "10:14",
-avatar: " ",
-  
-  ),
-  ChatModel(
-name:"khanjee",
-message: "bye",
-time: "10:34",
-avatar: "",
+avatar: "images/download.jpeg",
   
   ),
 ];
