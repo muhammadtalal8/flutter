@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:second_class/pages/home_page.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'WHATSAPP',
       theme: ThemeData(
-        primaryColor:  const Color.fromARGB(255, 6, 92, 9), 
-     
+        primaryColor: Color.fromARGB(255, 6, 92, 9), 
+        accentColor:     
       ),
       debugShowCheckedModeBanner: false,
       home:MyHomePage(title: 'Whatsapp'),
