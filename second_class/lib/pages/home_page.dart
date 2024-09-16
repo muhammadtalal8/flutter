@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:second_class/pages/chat_page.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({required Key key,required this.title}) : super(key: key);
   final String title;
+
+  const MyHomePage({super.key, required this.title});
 
   @override
   
