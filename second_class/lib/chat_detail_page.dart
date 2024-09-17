@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class ChatDetailPage extends StatefulWidget {
+class ChatDetailPage {
   const ChatDetailPage({super.key});
 
-  @override
   State<ChatDetailPage> createState() => _ChatDetailPageState();
 }
 
 class _ChatDetailPageState extends State<ChatDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold (
-      appBar : AppBar(
-        title: Row(
-          children:[
-            
-          ]
-        )
-      )
-    )
+    return Scaffold(appBar: AppBar(title: Row(children: [C])));
   }
+}
+
+class BuildContext {
+}
+
+mixin Widget {
+}
+
+class State {
 }

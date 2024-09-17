@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:second_class/pages/chat_page.dart';
+import 'package:second_class/chat_page.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:second_class/pages/home_page.dart';
+import 'package:second_class/home_page.dart';
 
 
 void main() {
